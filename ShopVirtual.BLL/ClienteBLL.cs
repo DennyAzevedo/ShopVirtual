@@ -30,43 +30,56 @@ namespace ShopVirtual.BLL
 
 		public void Update(Cliente Entity)
 		{
+			//verifica a existência do Objeto a ser atualizado
 			Cliente cli = _loja.Cliente.SingleOrDefault(c => c.ID == Entity.ID);
+			//Se o objetoi existe no BD, os valores são atualizados
 			if (cli != null)
 			{
+				//atualiza os valores no BD
 				_loja.Entry(Entity).CurrentValues.SetValues(Entity);
 				//Salva as alterações no BD
 				_loja.SaveChanges();
 			}
 		}
 
+		//localiza o "Cliente" através do "Email", é utilizado uma expressão Lambda
 		public Cliente Localiza(string email)
 		{
 			return Find(c => c.EMAIL.Trim().Equals(email)).FirstOrDefault();
 		}
 
+		//Retorna de uma lista (coleção) de "Clientes" através do uso de uma expressão lambda
 		public IQueryable<Cliente> Find(Expression<Func<Cliente, bool>> where)
 		{
+			//preparo o retorno da coleção de "Clientes" em função da expressão dada
 			return _loja.Cliente.Where(where);
 		}
 
+		//Retorna todos os "Clientes" existentes no BD
 		public IQueryable<Cliente> GetAll()
 		{
+			//o retorno é feito através do método Take.
+			//este método solicita a quantidade a ser retornada, para isso utilizamos o Count
 			return _loja.Cliente.Take(_loja.Cliente.Count());
 		}
 
 		public Cliente Autentica(string email, string senha)
 		{
+			//localiza o Cliente com o email e senha fornecidos
 			return Find(c => c.EMAIL.Trim().Equals(email) && c.Senha.Trim().Equals(senha)).FirstOrDefault();
 		}
 
 		public Cliente RecuperaSenha(string email)
 		{
+			//localiza o cliente através do email fornecido
 			return Find(c => c.EMAIL.Trim().Equals(email)).FirstOrDefault();
 		}
 
 		public bool VerificarExistencia(string email)
 		{
 			int qtdCli = 0;
+			//para verificar a existência de um cliente é utilizado o Count
+			//com a restrição do e-mail forncedido
 			qtdCli = Find(c => c.EMAIL.Trim().Equals(email)).Count();
 			if (qtdCli > 0)
 			{
