@@ -5,18 +5,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 	<title>Projeto PG1</title>
-	<asp:ContentPlaceHolder ID="head" runat="server">
-	</asp:ContentPlaceHolder>
+
 	<!-- Bootstrap Core CSS -->
 	<link href="Content/bootstrap.min.css" rel="stylesheet" />
+
 	<!-- Custom CSS -->
 	<link href="Content/landing-page.css" rel="stylesheet" />
+
 	<!-- Custom Fonts -->
-	<link href="Content/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+	<!-- jQuery -->
+	<script src="scripts/jquery-3.1.1.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="scripts/bootstrap.min.js"></script>
+
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
 </head>
 <body>
-	<form id="form1" runat="server">
 		<!-- Navigation -->
 		<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
 			<div class="container topnav">
@@ -28,19 +36,22 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand topnav" href="#">Start Bootstrap</a>
+					<a class="navbar-brand topnav" href="https://blackrockdigital.github.io/startbootstrap-landing-page/">Tema Original</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#about">About</a>
+							<a href="#begin">In&iacute;cio</a>
 						</li>
 						<li>
-							<a href="#services">Services</a>
+							<a href="#about">Sobre</a>
 						</li>
 						<li>
-							<a href="#contact">Contact</a>
+							<a href="#services">Servi&ccedil;os</a>
+						</li>
+						<li>
+							<a href="#contact">Contato</a>
 						</li>
 					</ul>
 				</div>
@@ -51,15 +62,15 @@
 
 
 		<!-- Header -->
-		<a name="about"></a>
+		<a name="begin"></a>
 		<div class="intro-header">
 			<div class="container">
 
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="intro-message">
-							<h1>Landing Page</h1>
-							<h3>A Template by Start Bootstrap</h3>
+							<h1>Projeto - PG1</h1>
+							<h3>POO com C# - Responsividade com Bootstrap e Asp.Net - Persist&ecirc;ncia de Dados com Entity Framework</h3>
 							<hr class="intro-divider">
 							<ul class="list-inline intro-social-buttons">
 								<li>
@@ -69,7 +80,7 @@
 									<a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i><span class="network-name">Github</span></a>
 								</li>
 								<li>
-									<a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i><span class="network-name">Linkedin</span></a>
+									<a href="https://www.facebook.com/mdvirtualacademy/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a>
 								</li>
 							</ul>
 						</div>
@@ -82,14 +93,13 @@
 		</div>
 		<!-- /.intro-header -->
 
-		<!-- Page Content -->
 
-		<a name="services"></a>
 		<div>
 			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-				
 			</asp:ContentPlaceHolder>
 		</div>
+	
+
 		<a name="contact"></a>
 		<div class="banner">
 
@@ -97,18 +107,18 @@
 
 				<div class="row">
 					<div class="col-lg-6">
-						<h2>Connect to Start Bootstrap:</h2>
+						<h2>Fique conectado a PG1:</h2>
 					</div>
 					<div class="col-lg-6">
 						<ul class="list-inline banner-social-buttons">
 							<li>
-								<a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">Twitter</span></a>
+								<a href="https://twitter.com/AcademyMD" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">Twitter</span></a>
 							</li>
 							<li>
 								<a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i><span class="network-name">Github</span></a>
 							</li>
 							<li>
-								<a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i><span class="network-name">Linkedin</span></a>
+								<a href="https://www.facebook.com/mdvirtualacademy/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a>
 							</li>
 						</ul>
 					</div>
@@ -131,31 +141,21 @@
 							</li>
 							<li class="footer-menu-divider">&sdot;</li>
 							<li>
-								<a href="#about">About</a>
+								<a href="#about">Sobre</a>
 							</li>
 							<li class="footer-menu-divider">&sdot;</li>
 							<li>
-								<a href="#services">Services</a>
+								<a href="#services">Servi&ccedil;os</a>
 							</li>
 							<li class="footer-menu-divider">&sdot;</li>
 							<li>
-								<a href="#contact">Contact</a>
+								<a href="#contact">Contatos</a>
 							</li>
 						</ul>
-						<p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+						<p class="copyright text-muted small">Copyright &copy; Denny Azevedo & Marilene Esquiavoni, 2016. All Rights Reserved</p>
 					</div>
 				</div>
 			</div>
 		</footer>
-		<!-- jQuery -->
-		<script src="scripts/jquery-3.1.1.min.js"></script>
-		<!-- Bootstrap Core JavaScript -->
-		<script src="scripts/bootstrap.min.js"></script>
-
-
-
-
-
-	</form>
 </body>
 </html>

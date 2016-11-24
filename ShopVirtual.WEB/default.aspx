@@ -2,71 +2,74 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-	<div class="content-section-a">
 
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-5 col-sm-6">
-								<hr class="section-heading-spacer">
-								<div class="clearfix"></div>
-								<h2 class="section-heading">Death to the Stock Photo:<br>
-									Special Thanks</h2>
-								<p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
-							</div>
-							<div class="col-lg-5 col-lg-offset-2 col-sm-6">
-								<img class="img-responsive" src="img/ipad.png" alt="">
-							</div>
-						</div>
+	<!-- Page Content -->
 
+	<a name="services"></a>
+	<div class="row text-center">
+		<div class="col-lg-10 col-lg-offset-1">
+			<h2>Nossos Servi&ccedil;os</h2>
+			<hr class="small">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="service-item">
+						<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-mobile-phone fa-stack-1x text-primary"></i>
+						</span>
+						<h4>
+							<strong>Aplica&ccedil;&otilde;es M&oacute;veis</strong>
+						</h4>
+						<p>Desenvolvimento de aplicativos para dispositivos m&oacute;veis.</p>
+						<a class="btn btn-light btn-primary" href="#">Veja Mais</a>
 					</div>
-					<!-- /.container -->
-
 				</div>
-				<!-- /.content-section-a -->
-
-				<div class="content-section-b">
-
-					<div class="container">
-
-						<div class="row">
-							<div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-								<hr class="section-heading-spacer">
-								<div class="clearfix"></div>
-								<h2 class="section-heading">3D Device Mockups<br>
-									by PSDCovers</h2>
-								<p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
-							</div>
-							<div class="col-lg-5 col-sm-pull-6  col-sm-6">
-								<img class="img-responsive" src="img/dog.png" alt="">
-							</div>
-						</div>
-
+				<div class="col-md-3 col-sm-6">
+					<div class="service-item">
+						<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-shopping-cart fa-stack-1x text-primary"></i>
+						</span>
+						<h4>
+							<strong>Com&eacute;rcio Eletr&ocirc;nico</strong>
+						</h4>
+						<p>Desenvolvimento de Lojas Virtuais com plataforma E-Commerce.</p>
+						<a class="btn btn-light btn-primary" href="#">Veja Mais</a>
 					</div>
-					<!-- /.container -->
-
 				</div>
-				<!-- /.content-section-b -->
-
-				<div class="content-section-a">
-
-					<div class="container">
-
-						<div class="row">
-							<div class="col-lg-5 col-sm-6">
-								<hr class="section-heading-spacer">
-								<div class="clearfix"></div>
-								<h2 class="section-heading">Google Web Fonts and<br>
-									Font Awesome Icons</h2>
-								<p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
-							</div>
-							<div class="col-lg-5 col-lg-offset-2 col-sm-6">
-								<img class="img-responsive" src="img/phones.png" alt="">
-							</div>
-						</div>
-
+				<div class="col-md-3 col-sm-6">
+					<div class="service-item">
+						<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-globe fa-stack-1x text-primary"></i>
+						</span>
+						<h4>
+							<strong>P&aacute;ginas e Sites</strong>
+						</h4>
+						<p>Desenvolvimento de P&aacute;ginas e Sites, colocamos sua empresa na Internet.</p>
+						<a class="btn btn-light btn-primary" href="#">Veja Mais</a>
 					</div>
-					<!-- /.container -->
-
 				</div>
-				<!-- /.content-section-a -->
+				<div class="col-md-3 col-sm-6">
+					<div class="service-item">
+						<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-user fa-stack-1x text-primary"></i>
+						</span>
+						<h4>
+							<strong>Faça seu cadastro</strong>
+						</h4>
+						<p>Cadastre-se e entraremos em contato com solu&ccedil;&otilde;es para seu neg&oacute;cio.</p>
+						<a class="btn btn-light btn-primary" href="Cliente.aspx">Aqui...</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.row (nested) -->
+		</div>
+		<!-- /.col-lg-10 -->
+	</div>
+	<br />
+	<br />
+
 </asp:Content>
+
