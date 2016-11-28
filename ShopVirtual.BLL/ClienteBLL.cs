@@ -32,7 +32,7 @@ namespace ShopVirtual.BLL
 		{
 			//verifica a existência do Objeto a ser atualizado
 			Cliente cli = _loja.Cliente.SingleOrDefault(c => c.ID == Entity.ID);
-			//Se o objetoi existe no BD, os valores são atualizados
+			//Se o objeto existe no BD, os valores são atualizados
 			if (cli != null)
 			{
 				//atualiza os valores no BD

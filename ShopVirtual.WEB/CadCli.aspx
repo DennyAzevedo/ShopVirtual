@@ -17,7 +17,7 @@
 							<asp:TextBox ID="nome" class="form-control" runat="server"></asp:TextBox>
 						</div>
 						<div class="col-xs-2">
-							<asp:Button ID="Gravar" runat="server" class="btn btn-default btn-primary" Text="Gravar" />
+							<asp:Button ID="Gravar" runat="server" class="btn btn-default btn-primary" Text="Gravar" OnClick="Gravar_Click" />
 						</div>
 					</div>
 
@@ -33,7 +33,7 @@
 							<asp:TextBox ID="email" class="form-control" runat="server"></asp:TextBox>
 						</div>
 						<div class="col-xs-2">
-							<asp:Button ID="Alterar" runat="server" class="btn btn-default btn-primary" Text="Alterar" />
+							<asp:Button ID="Alterar" runat="server" class="btn btn-default btn-primary" Text="Alterar" OnClick="Alterar_Click" />
 						</div>
 					</div>
 
@@ -49,7 +49,7 @@
 							<asp:TextBox ID="senha" class="form-control" runat="server" TextMode="Password"></asp:TextBox>
 						</div>
 						<div class="col-xs-offset-4 col-xs-2">
-							<asp:Button ID="Localizar" runat="server" class="btn btn-default btn-primary" Text="Localizar" />
+							<asp:Button ID="Localizar" runat="server" class="btn btn-default btn-primary" Text="Localizar" OnClick="Localizar_Click" />
 						</div>
 					</div>
 

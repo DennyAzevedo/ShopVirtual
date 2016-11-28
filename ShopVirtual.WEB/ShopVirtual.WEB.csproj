@@ -204,6 +204,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShopVirtual.BLL\ShopVirtual.BLL.csproj">
+      <Project>{62d1a4d8-795f-445e-a2c7-695bb7058a45}</Project>
+      <Name>ShopVirtual.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShopVirtual.Model\ShopVirtual.Model.csproj">
+      <Project>{fc628f53-c62c-4637-aae7-a4a8e1d2d2ae}</Project>
+      <Name>ShopVirtual.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -60,7 +60,7 @@
 							<strong>Faça seu cadastro</strong>
 						</h4>
 						<p>Cadastre-se e entraremos em contato com solu&ccedil;&otilde;es para seu neg&oacute;cio.</p>
-						<a class="btn btn-light btn-primary" href="Cliente.aspx">Aqui...</a>
+						<a class="btn btn-light btn-primary" href="CadCli.aspx">Aqui...</a>
 					</div>
 				</div>
 			</div>
